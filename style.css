@@ -1,0 +1,113 @@
+body {
+    background-color: #2a2a2a;
+    color: white;
+}
+
+#clock {
+    height: 50px;
+    font-size: 50px;
+}
+
+#clock, #full-date, #month-year {
+    text-align: center;
+}
+
+#full-date {
+    font-size: 40px;
+}
+
+.heading {
+    margin: auto;
+    width: 18cm;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#month-year {
+    font-size: 30px;
+}
+
+.buttons {
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#next, #prev {
+    font-size: 25px;
+    height: 40px;
+    width: 80px;
+    color: white;
+    background-color: seagreen;
+}
+
+#cal-cont {
+    width: 20cm;
+    height: 20cm;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    place-items: center;
+    place-self: center;
+}
+
+.week-days {
+    color:seagreen;
+}
+
+#cal-cont h3, #cal-cont div {
+    font-size: 25px;
+    width: 2cm;
+    height: 2cm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.curr-day {
+    background-color:seagreen;
+    border-radius: 15px;
+    border: solid 1px white;
+}
+
+.beyond-month {
+    opacity: 0.65;
+    color: gray;
+}
+
+p {
+    width: 30%;
+    margin: auto;
+}
+
+@media (max-width: 20cm) {
+    .heading {
+        width: 100%;
+        padding: 0;
+    }
+    .buttons {
+        width: 35%;
+        padding: 0 15px;
+    }
+    
+    #cal-cont {
+        width: 100%;
+        height: 100vw;
+    }
+
+    #cal-cont h3, #cal-cont div {
+        width: 1cm;
+        height: 1cm;
+    }
+
+    .curr-day {
+        border-radius: 5px;
+    }
+
+    p {
+        width: 100%;
+    }
+}
